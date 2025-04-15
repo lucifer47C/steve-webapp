@@ -1,0 +1,18 @@
+Explanation of the Script
+This script automates the process of querying Azure Monitor Logs to identify failed HTTP requests in a web application. 
+Here's a breakdown of what it does:
+
+Functionality:
+Authenticates to Azure using DefaultAzureCredential (works with CLI/login).
+Connects to a specific Azure Log Analytics workspace using its ID.
+Queries the AppRequests table to fetch all failed HTTP requests from the past 24 hours.
+Filters for failed requests using Success == false.
+
+Extracts relevant fields like:
+TimeGenerated (timestamp)
+Name (request name)
+Url (endpoint)
+ResultCode (HTTP status code)
+DurationMs (duration in milliseconds)
+
+Exports the data into a CSV report: failed_requests_report.csv.
