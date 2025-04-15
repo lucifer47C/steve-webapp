@@ -13,6 +13,7 @@ This assignment is designed to assess your fundamental DevOps skills, problem-so
   - Steps to deploy the application
   - Azure configurations used (Resource Groups, Networking, etc.)
   - Screenshots of a successful deployment
+  - https://steve-webapp-123.azurewebsites.net/
 
 ### 2. CI/CD Pipeline Implementation
 **Task:** Create a CI/CD pipeline using GitHub Actions/Jenkins/GitLab CI to automate the deployment of the above web application.
