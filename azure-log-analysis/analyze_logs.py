@@ -7,7 +7,7 @@ import datetime
 credential = DefaultAzureCredential()
 client = LogsQueryClient(credential)
 
-workspace_id = "9b795c30-3913-4ec3-8f1e-68f0bc024f5f"
+workspace_id = ""
 
 time_range = datetime.timedelta(days=1)
 
